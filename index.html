@@ -3,9 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    
+    <section class="todo">
+        <h2>To-Do list</h2>
+        <div class="input">
+            <input 
+                type="text" 
+                id="todoInput" 
+                placeholder="Enter a new task" 
+                class="input-field"
+            />
+            <button class="btn">Add</button>             
+        </div>
+        <div>
+            <ul class="scroll">
+                <li id="todoList"></li>
+            </ul>
+        </div>
+        <div>
+            <hr class="counter" />
+            <div class="counter-container">
+                <p><span>0</span> items total</p>
+                <button id="deleteButton">Delete All</button>                
+            </div>
+        </div>
+          
+    </section>
+    <footer>
+        <div class="footer">
+            <p class="made-by">Made By</p>
+            <p class="author">Paul Danso Asare</p>
+        </div>
+    </footer>
 </body>
 </html>
